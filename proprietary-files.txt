@@ -1502,7 +1502,7 @@ etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
 # Keystore
-lib64/hw/keystore.qcom.so
+vendor/lib64/hw/keystore.msm8916.so
 
 # Media
 vendor/lib/libDivxDrm.so
