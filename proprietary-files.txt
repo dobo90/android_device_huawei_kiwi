@@ -417,6 +417,9 @@ vendor/lib/libactuator_ov13850_ofilm_ohwba03_ale.so
 vendor/lib/libactuator_ov13850_ofilm_ohwba03_chm_camcorder.so
 vendor/lib/libactuator_ov13850_ofilm_ohwba03_chm_camera.so
 vendor/lib/libactuator_ov13850_ofilm_ohwba03_chm.so
+vendor/lib/libactuator_ov13850_ofilm_ohwba03_camcorder.so
+vendor/lib/libactuator_ov13850_ofilm_ohwba03_camera.so
+vendor/lib/libactuator_ov13850_ofilm_ohwba03.so
 vendor/lib/libactuator_ov13850_sunny_p13v01h_camcorder.so
 vendor/lib/libactuator_ov13850_sunny_p13v01h_camera.so
 vendor/lib/libactuator_ov13850_sunny_p13v01h.so
@@ -953,6 +956,10 @@ vendor/lib/libchromatix_ov13850_ofilm_ohwba03_chm_common.so
 vendor/lib/libchromatix_ov13850_ofilm_ohwba03_chm_default_video.so
 vendor/lib/libchromatix_ov13850_ofilm_ohwba03_chm_preview.so
 vendor/lib/libchromatix_ov13850_ofilm_ohwba03_chm_snapshot.so
+vendor/lib/libchromatix_ov13850_ofilm_ohwba03_common.so
+vendor/lib/libchromatix_ov13850_ofilm_ohwba03_default_video.so
+vendor/lib/libchromatix_ov13850_ofilm_ohwba03_preview.so
+vendor/lib/libchromatix_ov13850_ofilm_ohwba03_snapshot.so
 vendor/lib/libchromatix_ov13850_preview.so
 vendor/lib/libchromatix_ov13850_snapshot.so
 vendor/lib/libchromatix_ov13850_sunny_p13v01h_common.so
@@ -997,6 +1004,10 @@ vendor/lib/libchromatix_ov2720_hfr.so
 vendor/lib/libchromatix_ov2720_liveshot.so
 vendor/lib/libchromatix_ov2720_preview.so
 vendor/lib/libchromatix_ov2720_zsl.so
+vendor/lib/libchromatix_ov5648_foxconn_132_common.so
+vendor/lib/libchromatix_ov5648_foxconn_132_default_video.so
+vendor/lib/libchromatix_ov5648_foxconn_132_preview.so
+vendor/lib/libchromatix_ov5648_foxconn_132_snapshot.so
 vendor/lib/libchromatix_ov5648_foxconn_ale_common.so
 vendor/lib/libchromatix_ov5648_foxconn_ale_default_video.so
 vendor/lib/libchromatix_ov5648_foxconn_ale_preview.so
@@ -1029,10 +1040,14 @@ vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_chm_common.so
 vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_chm_default_video.so
 vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_chm_preview.so
 vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_chm_snapshot.so
+vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_common.so
+vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_default_video.so
 vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_kiw_common.so
 vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_kiw_default_video.so
 vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_kiw_preview.so
 vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_kiw_snapshot.so
+vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_preview.so
+vendor/lib/libchromatix_ov5648_ofilm_ohw5f03_snapshot.so
 vendor/lib/libchromatix_ov5648_oty5f03_common.so
 vendor/lib/libchromatix_ov5648_oty5f03_default_video.so
 vendor/lib/libchromatix_ov5648_oty5f03_preview.so
@@ -1204,6 +1219,10 @@ vendor/lib/libchromatix_s5k4e1_liteon_13p1_preview.so
 vendor/lib/libchromatix_s5k4e1_liteon_13p1_snapshot.so
 vendor/lib/libchromatix_s5k4e1_liteon_13p1_video_hd.so
 vendor/lib/libchromatix_s5k4e1_liteon_13p1_zsl.so
+vendor/lib/libchromatix_s5k4e1_sunny_132_common.so
+vendor/lib/libchromatix_s5k4e1_sunny_132_default_video.so
+vendor/lib/libchromatix_s5k4e1_sunny_132_preview.so
+vendor/lib/libchromatix_s5k4e1_sunny_132_snapshot.so
 vendor/lib/libchromatix_s5k4e1_sunny_ale_common.so
 vendor/lib/libchromatix_s5k4e1_sunny_ale_default_video.so
 vendor/lib/libchromatix_s5k4e1_sunny_ale_preview.so
