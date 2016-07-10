@@ -1500,6 +1500,16 @@ vendor/lib/libsc-a2xx.so
 vendor/lib/libsc-a3xx.so
 vendor/lib/libscale.so
 
+# Fingerprint
+bin/fingerprintd
+bin/teecd
+/sbin/signinfolistener
+lib64/hw/fingerprint.msm8916.so
+lib64/hw/fingerprintd.ex.so
+lib64/lib_fpc_tac_shared.so
+lib64/libservices.huawei.so
+lib64/libteec.so
+
 # Graphics firmware
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
@@ -1577,12 +1587,10 @@ etc/permissions/qcrilhook.xml
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
 lib/libhuawei_secure.so
-lib/liboeminfo_oem_api.so
 lib/liboeminfo.so
 lib/libqmi_nv_api.so
 -lib/libqmi_oem_api.so
 lib64/libhuawei_secure.so
-lib64/liboeminfo_oem_api.so
 lib64/liboeminfo.so
 lib64/libqmi_nv_api.so
 -lib64/libqmi_oem_api.so
@@ -1610,22 +1618,22 @@ vendor/lib/lib-imsdpl.so
 /sbin/hdbd
 /sbin/huawei_mmc_monitor
 /sbin/huawei_version
-/sbin/hw_scsi_switch
 /sbin/libqmi_oem_main
 /sbin/rmt_oeminfo
 /sbin/rmt_storage
-/sbin/usb_update
 
 # Sensors
-bin/oeminfo_server
+/sbin/oeminfo_nvm_server
 lib64/hw/sensors.msm8916.so
-lib/libdmd_report.so
-lib64/libdmd_report.so
+lib/libdmd.so
+lib64/libdmd.so
 vendor/etc/calmodule.cfg
 vendor/lib/libcalmodule_akm.so
 vendor/lib/libcalmodule_common.so
+vendor/lib/libcalmodule_gyroscope.so
 vendor/lib64/libcalmodule_akm.so
 vendor/lib64/libcalmodule_common.so
+vendor/lib64/libcalmodule_gyroscope.so
 
 # Thermal
 vendor/bin/thermal-engine

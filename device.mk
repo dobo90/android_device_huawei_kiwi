@@ -115,6 +115,16 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8916
 
+# Fingerprint sensor
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/fingerprint/fingerprint.idc:system/usr/idc/fingerprint.idc
+
+PRODUCT_PACKAGES += \
+    fingerprint.kl
+
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck \

@@ -225,7 +225,7 @@ service filebackup /system/bin/filebackup
 
 # service bootanim runs as user media
 
-service oeminfo_server /system/bin/oeminfo_server
+service oeminfo_nvm /sbin/oeminfo_nvm_server
     class core
     user root
     #seclabel u:r:oeminfo_domain:s0
@@ -245,6 +245,11 @@ service signinfolistener /sbin/signinfolistener
     class core
     user system
     #seclabel u:r:signinfolistener:s0
+
+service fingerprintd /system/bin/fingerprintd
+    class late_start
+    user system
+    group input
 
 service libqmi_oem_main /sbin/libqmi_oem_main
     class main
