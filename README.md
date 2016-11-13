@@ -1,1 +1,1 @@
-# android_device_huawei_kiwi
+TWRP for Huawei Honor 5x (kiwi) with decryption support.
