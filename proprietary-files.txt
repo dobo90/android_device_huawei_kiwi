@@ -1070,7 +1070,6 @@ bin/imsqmidaemon
 bin/netmgrd
 bin/qmuxd
 bin/radish
-bin/rfs_access
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 -framework/qcnvitems.jar
