@@ -25,21 +25,20 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <iostream>
-#include <fstream>
-#include <string>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
 
-using namespace std;
-
 typedef struct {
-    string model;
-    string description;
-    string fingerprint;
+    const char *model;
+    const char *description;
+    const char *fingerprint;
     bool is_cdma;
 } match_t;
 
@@ -134,25 +133,15 @@ static match_t matches[] = {
         "KII-L05-user 6.0.1 GRJ90 C654B340 release-keys",
         "HUAWEI/KII-L05/HWKII-Q:6.0.1/HUAWEIKII-L05/C654B340:user/release-keys"
     },
+    { 0, 0, 0 }
 };
-
-static const int n_matches = sizeof(matches) / sizeof(matches[0]);
-
-static int property_set(const char *key, string value)
-{
-    return property_set(key, value.c_str());
-}
-
-static bool contains(string str, string substr)
-{
-    return str.find(substr) != string::npos;
-}
 
 void vendor_load_properties()
 {
-    string platform;
-    string model;
-    string hwsim;
+    char platform[PROP_VALUE_MAX];
+    char model[110];
+    char hwsim[PROP_VALUE_MAX];
+    std::FILE* fp;
     int rc;
     match_t *match;
 
@@ -160,18 +149,19 @@ void vendor_load_properties()
     if (!rc || strncmp(platform, ANDROID_TARGET, PROP_VALUE_MAX))
         return;
 
-    ifstream app_info("/proc/app_info");
-    if (app_info.is_open()) {
-        while (getline(app_info, model) && !contains(model, "huawei_fac_product_name")) {
-        }
-        app_info.close();
+    fp = std::fopen("/proc/app_info", "rb");
+    if (fp != NULL) {
+        while (std::fgets(model, 100, fp))
+            if (std::strstr(model, "huawei_fac_product_name") != NULL)
+                break;
+        std::fclose(fp);
     }
 
-    for (match = matches; match - matches < n_matches && !contains(model, match->model); match++) {
+    for (match = matches; match->model && std::strstr(model, match->model) == NULL; match++) {
     }
 
     if (!match) {
-        WARNING("Unknown variant: %s", model.c_str());
+        WARNING("Unknown variant: %s", model);
         return;
     }
 
