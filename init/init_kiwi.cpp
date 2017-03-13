@@ -131,9 +131,10 @@ static match_t matches[] = {
     {
         "KII-L05",
         "KII-L05-user 6.0.1 GRJ90 C654B340 release-keys",
-        "HUAWEI/KII-L05/HWKII-Q:6.0.1/HUAWEIKII-L05/C654B340:user/release-keys"
+        "HUAWEI/KII-L05/HWKII-Q:6.0.1/HUAWEIKII-L05/C654B340:user/release-keys",
+        false
     },
-    { 0, 0, 0 }
+    { 0, 0, 0, 0 }
 };
 
 void vendor_load_properties()
@@ -161,7 +162,6 @@ void vendor_load_properties()
     }
 
     if (!match) {
-        WARNING("Unknown variant: %s", model);
         return;
     }
 
