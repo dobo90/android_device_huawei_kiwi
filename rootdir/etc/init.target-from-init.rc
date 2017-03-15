@@ -215,7 +215,6 @@ service signinfolistener /sbin/signinfolistener
 service libqmi_oem_main /sbin/libqmi_oem_main
     class main
     seclabel u:r:libqmi_oem_main:s0
-    group wakelock
 
 service rebootmgr /system/bin/rebootmgr
     class core
