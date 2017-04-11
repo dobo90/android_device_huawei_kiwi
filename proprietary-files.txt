@@ -929,6 +929,7 @@ bin/xtwifi-client
 -lib64/libloc_api_v02.so
 -lib/libloc_api_v02.so
 vendor/lib64/hw/flp.default.so
+vendor/lib64/libdataitems.so
 vendor/lib64/libflp.so
 vendor/lib64/libgeofence.so
 vendor/lib64/libizat_core.so
@@ -941,6 +942,7 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 vendor/lib64/libxtwifi_zpp_adaptor.so
 vendor/lib/hw/flp.default.so
+vendor/lib/libdataitems.so
 vendor/lib/libflp.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
