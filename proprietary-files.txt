@@ -915,7 +915,7 @@ lib64/hw/fingerprintd.ex.so
 lib64/hw/fingerprint.msm8916.so
 lib64/lib_fpc_tac_shared.so
 lib64/libservices.huawei.so
-/sbin/signinfolistener
+bin/signinfolistener
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.msm8916.so
@@ -1103,9 +1103,9 @@ vendor/lib64/libxml.so
 vendor/lib/lib-imsdpl.so
 
 # Ramdisk
-/sbin/huawei_version
-/sbin/libqmi_oem_main
-/sbin/rmt_oeminfo
+bin/huawei_version
+bin/libqmi_oem_main
+bin/rmt_oeminfo
 
 # Sensors
 lib64/hw/sensors.msm8916.so
