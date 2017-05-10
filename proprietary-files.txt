@@ -920,40 +920,43 @@ bin/signinfolistener
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.msm8916.so
 
-# GPS
-bin/garden_app
-bin/gpsone_daemon
-bin/lowi-server
-bin/xtwifi-inet-agent
-bin/xtwifi-client
--lib64/libloc_api_v02.so
--lib/libloc_api_v02.so
-vendor/lib64/hw/flp.default.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libflp.so
-vendor/lib64/libgeofence.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/libquipc_os_api.so
-vendor/lib64/libulp2.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_ulp_adaptor.so
-vendor/lib64/libxtwifi_zpp_adaptor.so
-vendor/lib/hw/flp.default.so
-vendor/lib/libdataitems.so
-vendor/lib/libflp.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-vendor/lib/liblocationservice.so
-vendor/lib/liblowi_client.so
-vendor/lib/libquipc_os_api.so
-vendor/lib/libulp2.so
-vendor/lib/libxtadapter.so
-vendor/lib/libxtwifi_ulp_adaptor.so
-vendor/lib/libxtwifi_zpp_adaptor.so
+# GPS (from kipper)
+bin/loc_launcher|4818abba3005fc63ab512bc1c076cfadc17ae67d
+etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
+etc/permissions/com.qualcomm.location.xml|878999ca1861e71cdbda75378164d6113296a428
+framework/com.qti.location.sdk.jar|595d8ba0d6e091ee1481b9d63587b80bf88d4e30
+-lib64/libloc_api_v02.so|e32918e3263796819916ecfe2e5d4735758b05a8
+-lib64/libloc_ds_api.so|6d2cc2dd6f1435955648fe0626ce79a7b6411416
+-lib/libloc_api_v02.so|42aab2457c678f59c97498a161a42915b3365e12
+-lib/libloc_ds_api.so|3a6c1b1393bda6710d64b87a8a96ff561e5d33b1
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk|26160a18bb0b6079451bbd57b7820841589d4472
+vendor/bin/slim_daemon|1d7aec180e0081b9441e85984e5cce8aee5f06dc
+vendor/lib64/hw/flp.default.so|22300e06491cb1fdf9bbf8c816d3c789790d09b9
+vendor/lib64/libdataitems.so|7ad2559238b58907acde0b8d981a31ab72e0a131
+vendor/lib64/libflp.so|4bd0052875205a4b106169ddd8451e2e0151a7fe
+vendor/lib64/libgeofence.so|5be57ed7ddb8005a06a0779c3104cacaf52f607b
+vendor/lib64/libizat_core.so|2516fd1cbaa2e2ec9e374076c907ab3aed345ba5
+vendor/lib64/liblbs_core.so|b7e95b2a828362bc8ac9a92168e8a0412868faf7
+vendor/lib64/liblocationservice_glue.so|4275268bf87433c9f9deb09e9864157f5958ea70
+vendor/lib64/liblocationservice.so|59858888cfdbfceefe3157fa117eadd6d881fecd
+vendor/lib64/liblowi_client.so|ee005b7253856daec7b76b228f268f075314bf5e
+vendor/lib64/libquipc_os_api.so|93a7d6c2d0d2c50935870bcc88659272649520d5
+vendor/lib64/libulp2.so|ba3c272ef9ed1e8c5171d6d210c54a178e222214
+vendor/lib64/libxtadapter.so|3b3f68654174e96acdaaea59b3700b7745e5be0c
+vendor/lib64/libxtwifi_ulp_adaptor.so|cdbd47437759e22f6a13da96ea1f882dd27afb7a
+vendor/lib/hw/flp.default.so|6d0fbc257f55373274a970f7081c3504a0a5178f
+vendor/lib/libdataitems.so|1944b45aa5232855932772253b32a66b7db573bf
+vendor/lib/libflp.so|aec819da2d22967c4b2c49ca55b4f3f74c4af0f8
+vendor/lib/libgeofence.so|b91de149da071fddb42772bb10439077d7b0b39a
+vendor/lib/libizat_core.so|bf23714f97dbe611148c592c6677ee0171d36336
+vendor/lib/liblbs_core.so|e82e804baaff20c8c1e46e183a1bd923247ec83e
+vendor/lib/liblocationservice_glue.so|1d2530fa79688c1fba3eab76166549703bc56f28
+vendor/lib/liblocationservice.so|ae046a1d4a7ddb70d71df1fff48532de5151bc6f
+vendor/lib/liblowi_client.so|04a4263655eafe1c6885d857d840f94eef00eab0
+vendor/lib/libquipc_os_api.so|bc4099ed1ae0af5ba7fcee2b9852177359c182dc
+vendor/lib/libulp2.so|17d0e6981815fb70bf735b7342bcf3335f3cd85f
+vendor/lib/libxtadapter.so|d352c8cbb4423fee971c5388e5548a47e80363f7
+vendor/lib/libxtwifi_ulp_adaptor.so|866e87a3722458202e4fd894929e1dc4230e04ed
 
 # Graphics
 vendor/lib64/egl/eglsubAndroid.so
