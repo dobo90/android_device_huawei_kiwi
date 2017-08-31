@@ -19,6 +19,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 LOCAL_PATH := device/huawei/kiwi
 
+PRODUCT_PACKAGES += \
+	libcryptfs_hw
+
 ifneq ($(TARGET_PREBUILT_KERNEL),)
 	PRODUCT_COPY_FILES += \
 		$(LOCAL_PATH)/kernel:kernel \
